@@ -13,7 +13,7 @@ export const Home = (props) => {
 
   const listaDeProdutos = props.productList.map((item) => {
     QuantidadeProdutos++;
-    console.log(item);
+    
     return <ProductCard produto={item} key={item.id} />;
   });
 
