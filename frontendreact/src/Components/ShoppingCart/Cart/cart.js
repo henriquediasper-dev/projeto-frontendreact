@@ -2,7 +2,9 @@ import React from "react";
 import { AsideStylerHome, TituloStyleHome, ButtonStyleHome } from "./CartStyle";
 import { Items } from "../Items/Items";
 
-export const Cart = () => {
+export const Cart = (props) => {
+
+  
   return (
     <>
       <AsideStylerHome>
