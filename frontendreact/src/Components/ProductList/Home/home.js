@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ProductCard } from "../ProductCard/ProductCard";
 import { CardBox, HomeStyle, MenuBox } from "./HomeStyle";
 
-export const Home = ({ productList }) => {
+export const Home = (props) => {
   const [ordination, setOrdination] = useState("");
 
   function onChangeOrdination(event){
@@ -11,7 +11,7 @@ export const Home = ({ productList }) => {
 
   let QuantidadeProdutos = 0;
 
-  const listaDeProdutos = productList.map((item) => {
+  const listaDeProdutos = props.productList.map((item) => {
     QuantidadeProdutos++;
     console.log(item);
     return <ProductCard produto={item} key={item.id} />;
