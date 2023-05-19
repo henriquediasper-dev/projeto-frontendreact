@@ -1,17 +1,17 @@
 import React from "react";
-import { BoxInsideCard, ImageBox, ImageStyle, InfoBox } from "./ProductCardStyle";
+import { BoxInsideCard, ImageBox, ImageStyle, InfoBox, Button } from "./ProductCardStyle";
 
-export const ProductCard = ({produto}) => {
+export const ProductCard = (props) => {
 
     return (
         <BoxInsideCard>
         <ImageBox>
-        <ImageStyle src={produto.imageUrl}/>
+        <ImageStyle src={props.produto.imageUrl}/>
         </ImageBox>
         <InfoBox>
-        <h3>Produto: {produto.name}</h3>
-        <h3>Valor: {produto.value}</h3>
-        <button>Adicionar ao carrinho</button>
+        <h3>Produto: {props.produto.name}</h3>
+        <h3>Valor: {props.produto.value}</h3>
+        <Button onClick={() => props.adicionaItensCarrinho(props.produto)}>Adicionar ao carrinho</Button>
         </InfoBox>
         </BoxInsideCard>
     

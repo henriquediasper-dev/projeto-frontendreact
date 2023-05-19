@@ -24,3 +24,5 @@ export const productList = [
       imageUrl: "https://picsum.photos/300/335?a=4"
     }
   ];
+
+  let soma=0
