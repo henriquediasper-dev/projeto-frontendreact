@@ -7,7 +7,7 @@ export const Button = styled.button`
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
-  font-size: 16px;
+  font-size: 13px;
   border: none;
 `;
 
@@ -26,7 +26,7 @@ export const BoxInsideCard = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 3%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 10px;
   padding: 0.5vw;
 `;
