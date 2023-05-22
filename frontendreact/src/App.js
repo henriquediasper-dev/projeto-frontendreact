@@ -33,6 +33,25 @@ useEffect(() => {
 
 }, [minFilter, maxFilter, searchFilter])
 
+useEffect(() => {                                          // esse useEffect é para carregar os itens do carrinho
+  const valorGuardadoNoCarrinho = localStorage.getItem("carrinho")
+  const carrinho = JSON.parse(valorGuardadoNoCarrinho)
+  setCart([...carrinho])
+  const valorGuardadoNoAmount = localStorage.getItem("amount")
+  const amountTransformado = JSON.parse(valorGuardadoNoAmount)
+  setAmount(amountTransformado)
+}, [])
+console.log(typeof amount)
+useEffect(() => {                                            // esse useEffect é para salvar os itens do carrinho
+  setTimeout(() => {                                         // coloquei este setTimeout coloca delay na execução do que está entre as chaves, este método é sempre em MilisSegundos
+  const salvarValorDoCarrinho = JSON.stringify(cart)
+  const salvarValorDaAmount = JSON.stringify(amount)
+  localStorage.setItem("carrinho", salvarValorDoCarrinho)   // esse localStorage salva os itens no carrinho 
+  localStorage.setItem("amount", salvarValorDaAmount)       // esse localStorage salva os itens da amount
+  }, 100)
+  
+}, [cart, amount])
+
   return (
     <AppStyle>
       <GlobalStyle />
