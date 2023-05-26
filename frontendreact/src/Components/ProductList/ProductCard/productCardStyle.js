@@ -3,12 +3,17 @@ import styled from "styled-components";
 export const Button = styled.button`
   height: 40px;
   cursor: pointer;
-  border-radius: 10px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #59E57F;
+  color: #465188;
+  font-weight: bold;
   font-size: 13px;
   border: none;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 export const ImageBox = styled.div`
@@ -16,19 +21,21 @@ export const ImageBox = styled.div`
 `;
 
 export const ImageStyle = styled.img`
-  border-radius: 10px;
+  border-radius: 0.5rem;
   height: 250px;
   width: 200px;
 `;
 
 export const BoxInsideCard = styled.div`
-  height: 400px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   margin-bottom: 3%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  border-radius: 10px;
-  padding: 0.5vw;
+  box-shadow: 0.5rem 0.5rem 1rem 0 rgba(89,229,127,0.5);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #465188;
+  gap: 0.5rem;
 `;
 
 export const InfoBox = styled.div`
@@ -36,4 +43,5 @@ export const InfoBox = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   height: 30%;
+  gap: 0.5rem;
 `;

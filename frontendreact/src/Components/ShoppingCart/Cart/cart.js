@@ -1,6 +1,7 @@
 import React from "react";
-import { AsideStylerHome, TituloStyleHome } from "./CartStyle";
+import { AsideStylerHome, HeaderCarrinho, TituloStyleHome, TotalLine } from "./CartStyle";
 import { Items } from "../Items/Items";
+import icon from "../../Assents/Images/ufo.png";
 
 export const Cart = (props) => {
   console.log(props.cart);
@@ -9,14 +10,14 @@ export const Cart = (props) => {
     props.cart.map((produto) => {
       if (produto.id === id && produto.quantidade >= 1) {
         produto.quantidade = produto.quantidade - 1;
-        props.setAmount(props.amount - produto.value)
+        props.setAmount(props.amount - produto.value);
         props.setCart([...props.cart]);
       }
       if (produto.quantidade === 0) {
         const novoCarrinho = props.cart.filter(
           (produtosRemovidos) => produtosRemovidos.quantidade !== 0
         );
-        props.setAmount(props.amount - produto.value)
+        props.setAmount(props.amount - produto.value);
         props.setCart(novoCarrinho);
       }
     });
@@ -38,9 +39,15 @@ export const Cart = (props) => {
   return (
     <>
       <AsideStylerHome>
-        <TituloStyleHome>Carrinho</TituloStyleHome>
+        <HeaderCarrinho>
+          <TituloStyleHome>Carrinho</TituloStyleHome>
+          <img src={icon}></img>
+        </HeaderCarrinho>
         {renderizaItensDoCarrinho}
-        <p>Total:{props.amount.toFixed(2)}</p>
+        <TotalLine>
+          <p>Total:</p>
+          <h3>{props.amount.toFixed(2)}</h3>
+        </TotalLine>
       </AsideStylerHome>
     </>
   );

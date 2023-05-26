@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 
 const App = () => {
-
+  
   const [minFilter, setMinFilter] = useState("")
   const [maxFilter, setMaxFilter] = useState(null)
   const [searchFilter, setSearchFilter] = useState("")
