@@ -6,7 +6,7 @@ export const AppStyle = styled.div`
   grid-template-columns: repeat(12, 1fr);
   background-color: #131313;
   /* gap: 16px; */
-  background-image: url(${backgroundImage});
+  /* background-image: url(${backgroundImage});
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 `;

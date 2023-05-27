@@ -66,7 +66,7 @@ export const Home = (props) => {
   return (
     <HomeStyle>
       <HeaderHome>
-        <h1>3º Mundo Adesivos </h1>
+        <h1>3º Mundo - Adesivos </h1>
       </HeaderHome>
       <MenuBox>
         <p>Quantidade de produtos: {QuantidadeProdutos}</p>

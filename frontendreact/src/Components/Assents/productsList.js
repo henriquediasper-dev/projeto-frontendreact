@@ -1,15 +1,14 @@
-import icon1 from "./Images/space1.jpg"
-import icon2 from "./Images/space2.jpg"
+import icon1 from "./Images/space1.png"
+import icon2 from "./Images/space2.png"
 import icon3 from "./Images/space3.png"
 import icon4 from "./Images/space4.png"
 import icon5 from "./Images/space5.png"
-import icon6 from "./Images/space6.jpg"
-import icon7 from "./Images/space7.jpg"
-import icon8 from "./Images/space8.jpg"
-import icon9 from "./Images/space9.jpg"
+
+import icon8 from "./Images/space8.png"
+import icon9 from "./Images/space9.png"
 import icon10 from "./Images/space10.png"
 import icon11 from "./Images/space11.png"
-import icon12 from "./Images/space12.png"
+
 import icon13 from "./Images/space13.png"
 import icon14 from "./Images/space14.png"
 import icon15 from "./Images/space15.png"
@@ -19,26 +18,26 @@ import icon15 from "./Images/space15.png"
 export const productList = [
   {
     id: 1,
-    name: "ET Plutão",
+    name: "Plutaniano",
     value: 10.0,
     imageUrl: icon4
   },
   {
     id: 2,
-    name: "ET Marte",
-    value: 10.0,
+    name: "Marciano",
+    value: 9.0,
     imageUrl: icon5
   },  
   {
     id: 5,
-    name: "ET Nárnia",
-    value: 12.0,
+    name: "Nárniano",
+    value: 20.0,
     imageUrl: icon3
     },
     {
       id: 3,
       name: "Smoke ET",
-      value: 10.0,
+      value: 16.0,
       imageUrl: icon11
     },
     {
@@ -50,24 +49,24 @@ export const productList = [
     {
       id: 6,
       name: "Bad ET",
-      value: 3.0,
+      value: 13.0,
       imageUrl: icon15
     },
     {
       id: 7,
-      name: "Vaca Abdução",
+      name: "Diabão ET",
+      value: 11.0,
+      imageUrl: icon1
+    },
+    {
+      id: 8,
+      name: "Mental ET",
       value: 15.0,
       imageUrl: icon9
     },
     {
-      id: 8,
-      name: "Space",
-      value: 5.0,
-      imageUrl: icon1
-    },
-    {
       id: 9,
-      name: "Et fitness",
+      name: "Robot ET",
       value: 8.0,
       imageUrl: icon2
     },
@@ -79,24 +78,16 @@ export const productList = [
     },
     {
       id: 11,
-      name: "ET",
-      value: 4.0,
-      imageUrl: icon8
-    },
-    {
-      id: 12,
       name: "Vibes ET",
       value: 6.0,
       imageUrl: icon14
     },
     {
-      id: 13,
-      name: "Green ET",
-      value: 6.0,
-      imageUrl: icon12
+      id: 12,
+      name: "Multicolor ET",
+      value: 4.0,
+      imageUrl: icon8
     },
-
-
   ];
 
   
