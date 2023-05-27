@@ -10,7 +10,7 @@ export const ProductCard = (props) => {
         </ImageBox>
         <InfoBox>
         <h3>Produto: {props.produto.name}</h3>
-        <h3>Valor: {props.produto.value}</h3>
+        <p>Valor: {props.produto.value}</p>
         <Button onClick={() => props.adicionaItensCarrinho(props.produto)}>Adicionar ao carrinho</Button>
         </InfoBox>
         </BoxInsideCard>

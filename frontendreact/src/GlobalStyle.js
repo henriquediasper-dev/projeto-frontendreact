@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
   p, h1, h2, h3, span, button, input, aside, label, select {
     font-family: "Montserrat", sans-serif;
   }
+
+  p, h1, h2, h3, label{
+    color: #ffffff;
+  }
 `;
 
 export default GlobalStyles;
