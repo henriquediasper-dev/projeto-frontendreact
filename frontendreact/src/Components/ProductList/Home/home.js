@@ -11,6 +11,7 @@ export const Home = (props) => {
     setOrdination(selectedOrdination);
     sortProducts(selectedOrdination);
   };
+
   // console.log("ListaFiltrada", props.listaFiltrada, "listaNORMAL", props.productList)
   const adicionaItensCarrinho = (produto) => {
     const novoProduto = props.cart.find((item) => item.id === produto.id); // variavel pra receber o produto

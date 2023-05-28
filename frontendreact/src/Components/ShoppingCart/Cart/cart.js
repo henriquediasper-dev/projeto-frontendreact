@@ -1,5 +1,10 @@
 import React from "react";
-import { AsideStylerHome, HeaderCarrinho, TituloStyleHome, TotalLine } from "./CartStyle";
+import {
+  AsideStylerHome,
+  HeaderCarrinho,
+  TituloStyleHome,
+  TotalLine,
+} from "./CartStyle";
 import { Items } from "../Items/Items";
 import icon from "../../Assents/Images/ufo.png";
 
@@ -46,7 +51,7 @@ export const Cart = (props) => {
         {renderizaItensDoCarrinho}
         <TotalLine>
           <p>Total:</p>
-          <h3>{props.amount.toFixed(2)}</h3>
+          <h3>{props.amount.toFixed(2)}R$</h3>
         </TotalLine>
       </AsideStylerHome>
     </>
